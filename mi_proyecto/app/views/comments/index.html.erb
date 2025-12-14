@@ -1,0 +1,17 @@
+<h1>Comments to article</h1>
+
+<ul>
+    <% @comments.each do |comment| %>
+        <li>
+            <%= comment.body %>
+        </li>
+    <% end %>
+</ul>
+
+<p>
+    <%= link_to "New Comment", new_article_comment_path(@article) %>
+</p>
+
+<p>
+    <%= link_to "Back to articles", articles_path(@article) %>
+</p>

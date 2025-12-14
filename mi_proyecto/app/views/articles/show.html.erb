@@ -1,0 +1,13 @@
+<h1><%= @article.title %></h1>
+
+<p><%= @article.content %></p>
+
+<p>
+    <%= link_to "Ver comentarios", article_comments_path(@article) %>
+</p>
+
+<p>
+    <%= link_to "Volver", articles_path %>
+</p>
+
+
